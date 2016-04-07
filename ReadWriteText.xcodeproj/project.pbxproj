@@ -14,6 +14,7 @@
 		18B5BD591CB643490070198D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B5BD571CB643490070198D /* LaunchScreen.storyboard */; };
 		18B5BD641CB6434A0070198D /* ReadWriteTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5BD631CB6434A0070198D /* ReadWriteTextTests.swift */; };
 		18B5BD6F1CB6434A0070198D /* ReadWriteTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5BD6E1CB6434A0070198D /* ReadWriteTextUITests.swift */; };
+		18B5BD7F1CB64B4D0070198D /* ProjectTextFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18B5BD7E1CB64B4D0070198D /* ProjectTextFile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		18B5BD6A1CB6434A0070198D /* ReadWriteTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadWriteTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B5BD6E1CB6434A0070198D /* ReadWriteTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteTextUITests.swift; sourceTree = "<group>"; };
 		18B5BD701CB6434A0070198D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B5BD7E1CB64B4D0070198D /* ProjectTextFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProjectTextFile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				18B5BD501CB643490070198D /* ViewController.swift */,
 				18B5BD521CB643490070198D /* Main.storyboard */,
 				18B5BD551CB643490070198D /* Assets.xcassets */,
+				18B5BD7E1CB64B4D0070198D /* ProjectTextFile.txt */,
 				18B5BD571CB643490070198D /* LaunchScreen.storyboard */,
 				18B5BD5A1CB643490070198D /* Info.plist */,
 			);
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B5BD591CB643490070198D /* LaunchScreen.storyboard in Resources */,
+				18B5BD7F1CB64B4D0070198D /* ProjectTextFile.txt in Resources */,
 				18B5BD561CB643490070198D /* Assets.xcassets in Resources */,
 				18B5BD541CB643490070198D /* Main.storyboard in Resources */,
 			);
