@@ -16,15 +16,15 @@ class ViewController: UIViewController {
         
         // Save data to file
         let fileName = "Test"
-        let DocumentDirURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
+        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         
-        let fileURL = DocumentDirURL.URLByAppendingPathComponent(fileName).URLByAppendingPathExtension("txt")
+        let fileURL = DocumentDirURL.appendingPathComponent(fileName).appendingPathExtension("txt")
         print("FilePath: \(fileURL.path)")
         
         let writeString = "Write this text to the fileURL as text in iOS using Swift"
         do {
             // Write to the file
-            try writeString.writeToURL(fileURL, atomically: true, encoding: NSUTF8StringEncoding)
+            try writeString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
         } catch let error as NSError {
             print("Failed writing to URL: \(fileURL), Error: " + error.localizedDescription)
         }
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         var readString = "" // Used to store the file contents
         do {
             // Read the file contents
-            readString = try String(contentsOfURL: fileURL)
+            readString = try String(contentsOf: fileURL)
         } catch let error as NSError {
             print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
         }
@@ -41,11 +41,11 @@ class ViewController: UIViewController {
         /*** Read from project txt file ***/
         
         // File location
-        let fileURLProject = NSBundle.mainBundle().pathForResource("ProjectTextFile", ofType: "txt")
+        let fileURLProject = Bundle.main.path(forResource: "ProjectTextFile", ofType: "txt")
         // Read from the file
         var readStringProject = ""
         do {
-            readStringProject = try String(contentsOfFile: fileURLProject!, encoding: NSUTF8StringEncoding)
+            readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
         } catch let error as NSError {
              print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
         }
