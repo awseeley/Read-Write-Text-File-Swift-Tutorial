@@ -3,6 +3,8 @@ Read to and Write from a text file in Swift
 
 Source code for Reading to and Writing from a text file in Swift.
 
+Updated to Swift 5. iOS 12.2 by Robert Chalmers https://robert-chalmers.uk
+
 Tutorial:
 
 http://www.seemuapps.com/read-to-and-write-from-a-text-file-in-swift
